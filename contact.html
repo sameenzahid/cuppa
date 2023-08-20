@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('images/back.jpeg'); /* Replace 'images/back.jpeg' with the actual image file path */
+            background-size: cover; /* This makes the image cover the entire body */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+        
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            max-width: 100%;
+            padding: 10px;
+            /* z-index: 1000; */
+            /* height: 30px; */
+        }
+
+        .logo img {
+            max-height:110px;
+            border-radius: 50%;
+            background-color: rgb(101, 40, 44);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-radius: 50%;
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        nav ul li a:hover {
+            color: #ff9900;
+            font-weight: bold;
+        }
+
+        /* Style the contact section */
+.contact {
+    /* background-color: #f4f4f4; */
+    padding: 30px;
+    text-align: center;
+   
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact main {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* padding: 20px; */
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact button {
+    display: inline-block;
+    width: 100%; /* Make the button full width */
+    padding: 10px 20px;
+  color: white;
+    background-image: linear-gradient(#000000, #d90166);
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact button:hover {
+    background-image: linear-gradient( #d90166, #000000,#d90166);
+        background-color: transparent;
+        }
+   
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Company Logo">
+        </div>
+        <ul>
+            <li><a href="page.html">Home</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact">
+        
+        <!-- <p>Have questions? Reach out to us at <a href="mailto:info@example.com">info@example.com</a></p> -->
+        <main>
+            <form action="submit_form.php" method="post">
+         
+            <h1 style="text-align: center;">Contact Us</h1>
+                
+                <input type="text" id="name" name="name" placeholder="Enter Name"  required>
+
+                <input type="email" id="email" name="email"  placeholder="Enter Email" required>
+
+                <textarea id="message" name="message" rows="4"  placeholder="Enter Your mesage" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+            background-image: url('images/back.jpeg'); /* Replace 'images/back.jpeg' with the actual image file path */
+            background-size: cover; /* This makes the image cover the entire body */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+}
+
+.features {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 60px 0;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 100%;
+    margin: 5px;
+    padding: 40px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            max-width: 100%;
+            padding: 10px;
+            /* z-index: 1000; */
+            /* height: 30px; */
+        }
+
+        .logo img {
+            max-height:110px;
+            border-radius: 50%;
+            background-color: rgb(101, 40, 44);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-radius: 50%;
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        nav ul li a:hover {
+            color: #ff9900;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Company Logo" >
+        </div>
+        <ul>
+            <li><a href="page.html">Home</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="features">
+        <div class="feature"> <a href="radioad.html" style="text-decoration: none;">
+            <img src="images/icon1.jpeg" alt="Feature Icon" style="padding-left: 50px;">
+            <h2 style="color: black;">Text to Audio</h2>
+            <p>Experience videos like never before with our high-definition quality.</p></a>
+        </div>
+    <div class="feature"> <a href="vedioad.html" style="text-decoration: none;">
+        <img src="images/voice.png" alt="Feature Icon" style="padding-left: 50px;">
+        <h2 style="color: black;">Text to Vedio</h2>
+        <p>Crafting a compelling message that can be visually translated into a video.</p></a>
+    </div>
+</section> 
+</body>
+</html>
